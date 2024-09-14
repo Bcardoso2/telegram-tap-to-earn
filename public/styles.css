@@ -1,0 +1,88 @@
+:root {
+    --aqur-color: #C7F8F9;
+    --aqur-bg: #6AB1C9;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+    background-color: #f0f8ff;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.container {
+    margin-top: 50px;
+}
+
+#points {
+    font-size: 28px;
+    color: var(--aqur-bg);
+    margin-bottom: 30px;
+}
+
+.btn-bg {
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--aqur-bg);
+    position: relative;
+}
+
+.btn-1 {
+    text-align: center;
+    position: relative;
+}
+
+.btn-1 button {
+    color: var(--aqur-color);
+    background: transparent;
+    border: 3px solid var(--aqur-color);
+    border-radius: 5px;
+    padding: 1rem 3rem;
+    font-size: 1.5em;
+    font-weight: 400;
+    text-transform: uppercase;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.5s ease;
+}
+
+.btn-1 button:hover {
+    background: var(--aqur-color);
+    color: var(--aqur-bg);
+    border: 3px solid var(--aqur-bg);
+    transform: translateY(-5px);
+}
+
+.btn-1 button:active {
+    transform: translate(5px, 5px);
+}
+
+.plus-one {
+    position: absolute;
+    font-size: 24px;
+    color: var(--aqur-color);
+    pointer-events: none;
+    opacity: 1;
+    transition: opacity 0.5s ease;
+}
+
+.animate-plus-one {
+    animation: plusOneAnimation 1s forwards;
+}
+
+@keyframes plusOneAnimation {
+    0% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+}

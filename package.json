@@ -1,0 +1,16 @@
+{
+  "name": "tap-to-earn-webapp",
+  "version": "1.0.0",
+  "description": "Tap to Earn Web Application",
+  "main": "server/server.js",
+  "scripts": {
+    "start": "node server/server.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "cors": "^2.8.5"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}
